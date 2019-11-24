@@ -7,4 +7,5 @@
 ; Description: Hello World Demo
 */ 
 
+//Logging name to the console
 console.log("Hello World, my name is Clayton Stacy"); 
