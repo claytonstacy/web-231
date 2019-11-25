@@ -8,8 +8,7 @@
 ============================================
 */ 
 
-var date = '13/1/2019';
-var newDate = new Date(date).toLocaleDateString();
+var newDate = new Date(13/1/2019).toLocaleDateString();
 var b = π;
 var c = 50;
 
