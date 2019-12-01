@@ -1,3 +1,12 @@
+/*
+============================================
+; Title:  header.js
+; Author: Clayton Stacy
+; Date:   1 December 2019
+; Modified By: Clayton Stacy
+; Description: Displays a formatted header
+;===========================================
+*/
 
 //Importing header file
 const header = require('./Stacy-header.js');
