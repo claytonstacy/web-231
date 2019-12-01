@@ -8,11 +8,12 @@
 ============================================
 */ 
 
-var sound = "Woof";
-function bark(param) {
-    console.log(param);
-};
-bark(sound);
+var newDate = new Date().toLocaleDateString();
+var b = 2;
+var c = 50;
+
+console.log(newDate);
+console.log(b * c);
 
 /*
 There are a couple of ways to solve this problem, but I've chosen to move the assignment statement outside of the function.  This changes
