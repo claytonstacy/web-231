@@ -8,7 +8,7 @@
 ============================================
 */ 
 
-//Create function that takes in two strings and return them concatenated
+//Create function that takes in two strings and returns them concatenated
 function fullName(first, last) {
     const nameArr = [first, last];
     return nameArr.join(" ");
