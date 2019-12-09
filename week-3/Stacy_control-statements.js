@@ -9,7 +9,7 @@
 */
 
 // variable
-const choice = "D";
+const choice = "E";
 
 // if...else statements
 /* if (choice === "A") {
@@ -37,5 +37,8 @@ switch(choice) {
     break;
     case"D":
     console.log("D");
+    break;
+    default:
+    console.log("Invalid Character");
     break;
 }
