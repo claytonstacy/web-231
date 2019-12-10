@@ -9,7 +9,7 @@
 */
 
 // variable
-const choice = "E";
+const choice = "A";
 
 // if...else statements
 /* if (choice === "A") {

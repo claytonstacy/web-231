@@ -13,7 +13,7 @@ var header = require('../week-2/Stacy-header.js');
 console.log(header.display('Clayton', 'Stacy', '3.2 Pattern Matching Functions'));
 
 // Declare test variables, array of objects with two values each
-const valPairs = [{val1: 3, val2: 3}, {val1: 10, val2: 1643}, {val1: 234, val2: 13425}];
+const valPairs = [{val1: 3, val2: 6410352}, {val1: 10, val2: 1643}, {val1: 234, val2: 234}];
 
 //Checks for match between two values and return boolean
 var match = (x,y) => {
@@ -38,4 +38,4 @@ var logMatch = (x,y) => {
 };
 
 //Passes in test value array and checks for match on each, then logs based on result
-valPairs.forEach(i => (i.val1 === i.val2 ? logMatch(i.val1, i.val2) : logMismatch(i.val1, i.val2)));
+valPairs.forEach(i => (match(i.val1, i.val2) ? logMatch(i.val1, i.val2) : logMismatch(i.val1, i.val2)));
