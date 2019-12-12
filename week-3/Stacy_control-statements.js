@@ -8,6 +8,10 @@
 ;===========================================
 */
 
+// Import header and write it to the console.
+var header = require('../week-2/Stacy-header.js');
+console.log(header.display('Clayton', 'Stacy', '3.3 Control Statements'));
+
 // variable
 const choice = "A";
 

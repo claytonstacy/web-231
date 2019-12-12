@@ -7,6 +7,11 @@
 ; Description: Loops
 ============================================
 */ 
+
+// Import header and write it to the console.
+var header = require('../week-2/Stacy-header.js');
+console.log(header.display('Clayton', 'Stacy', '3.4 Loops'));
+
 //Declare a value between 1 and 10
 var compareVal = 3;
 //Functions to compare two avlues and log outcome to console
