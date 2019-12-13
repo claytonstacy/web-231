@@ -41,13 +41,11 @@ function randomNumber() {
   }
 
 //Loop to create 10 random numbers, compare them to the compareVal, and call the match functions to log the results
-var i =0;
-while (i < 10) {
+for (i=0; i < 10; i++) {
     let randomVal = randomNumber();
     if (match(randomVal, compareVal)) {
         logMatch(randomVal, compareVal);
     } else {
         logMismatch(randomVal, compareVal);
     }
-    i++
 };
