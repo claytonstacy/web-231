@@ -86,6 +86,7 @@ const composers = [{
  }
 ]
 
+//Use map function to create new array of objects with only rating and last name
 var byRating = composers.map(function(composer) {
     return {
         'rating': composer.rating,
@@ -93,6 +94,7 @@ var byRating = composers.map(function(composer) {
     }
 })
 
+//Use forEach loop to log each composer to the console in the desired format
 console.log(`  -- COMPOSER BY RATING --`);
 byRating.forEach(function(composer) {
     console.log(`Rating: ${composer.rating}
@@ -100,6 +102,7 @@ Composer: ${composer.lastName}
 `);
 })
 
+//Use map function to create new array of objects with only genre and last name
 var byGenre = composers.map(function(composer) {
     return {
         'genre': composer.genre,
@@ -107,6 +110,7 @@ var byGenre = composers.map(function(composer) {
     }
 })
 
+//Use forEach loop to log each composer to the console in the desired format
 console.log(`  -- COMPOSER BY GENRE --`);
 byGenre.forEach(function(composer) {
     console.log(`Genre: ${composer.genre}
