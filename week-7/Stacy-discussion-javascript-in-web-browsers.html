@@ -28,6 +28,7 @@ Discussion 7.1
 <body>
     <h2>Please fill in the form:</h2>
     <form>
+        <!--Build form to collect first and last name then add submit button to call submitAction function-->
         First name:
         <input type="text" id='firstName' name='firstName'>
         <br>
@@ -42,9 +43,10 @@ Discussion 7.1
 </html>
 <script>
 
+//Build function call on submit which assigns first and last name a variable then prints them to an alert box.
 function submitAction() {
     var firstName = document.getElementById('firstName');
     var lastName = document.getElementById('lastName');
-    alert(`Thank you ${firstName}`);
+    alert(`Thank you ${firstName} ${lastName}`);
 }
 </script>
