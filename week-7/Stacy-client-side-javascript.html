@@ -1,0 +1,55 @@
+<!--
+============================================
+Title: Assignment 7.3
+Author: Professor Krasso
+Date: 26 January 2020
+Modified By: Clayton Stacy
+Description: Client Side Javascript
+============================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>
+7.3 Client-Side Javascript
+</title>
+<meta name="author" content="Clayton Stacy">
+<meta name="revised" content="Clayton Stacy, 1/26/2020">
+<meta name="description" content="Web 231 Assignment 7.3">
+<link rel="stylesheet" href="../site.css">
+
+</head>
+<body>
+    <script>
+        //Use document.write to insert the header and an ol of shopping items
+        document.write("<h1>Shopping List v.1</h1>")
+      </script>
+    <script>
+      document.write("<ol><li>Oranges</li><li>Apples</li><li>Pears</li><li>Limes</li><li>Lemons</li></ol>")
+    </script>
+    
+    <div id="shoppingList"></div>
+    <script>
+        //Use innerHTML to insert a table with the shopping items.
+      document.getElementById('shoppingList').innerHTML = "<h1>Shopping List v.2</h1>" +
+        "<table>" +
+        "<thead>" +
+        "<tr>" +
+        "<th>Id</th>" +
+        "<th>Item</th>" +
+        "</tr>" +
+        "</thead>" +
+        "<tbody>" +
+        "<tr><td>1</td><td>Oranges</td></tr>" +
+        "<tr><td>2</td><td>Apples</td></tr>" +
+        "<tr><td>3</td><td>Pears</td></tr>" +
+        "<tr><td>4</td><td>Limes</td></tr>" +
+        "<tr><td>5</td><td>Lemons</td></tr>" +
+        "</tbody>" +
+        "</table>"
+    </script>
+    
+    </body>
+    </html>
