@@ -1,0 +1,66 @@
+<!--
+============================================
+; Title:  7.4
+; Author: Professor Krasso
+; Date:   25 June 2017
+; Modified by: Clayton Stacy
+; Description: Inline Javascript Functions
+;===========================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inline JavaScript Functions</title>
+
+    <link rel="stylesheet" href="../site.css">
+
+</head>
+<body>
+
+    <div id="components"></div>
+    <script>
+        //Create the data table with two action functions at the end that open alerts and output the id and a message "Are you sure", respectively
+      document.getElementById('components').innerHTML = "<h1>Computer Components</h1>" +
+        "<table>" +
+        "<thead>" +
+        "<tr>" +
+        "<th>Id</th>" +
+        "<th>Name</th>" +
+        "<th>Amount</th>" +
+        "<th colspan= '2'>Functions</th>" +
+        "</tr>" +
+        "</thead>" +
+        "<tbody>" +
+        "<tr>" +
+        "<td>1</td><td>Laptop</td><td>1,500.99</td>" +
+        "<td><a href='javascript:alert(1);'" +
+        ">Edit</a></td>" +
+        "<td><a href='javascript:alert(\"Are you sure?\");'" +
+        ">Delete</a></td></tr>" +
+        "<tr><td>2</td><td>Motherboard</td><td>35.70</td>" +
+        "<td><a href='javascript:alert(2);'" +
+        ">Edit</a></td>" +
+        "<td><a href='javascript:alert(\"Are you sure?\");'" +
+        ">Delete</a></td></tr>" +
+        "<tr><td>3</td><td>Monitor</td><td>174.99</td>" +
+        "<td><a href='javascript:alert(3);'" +
+        ">Edit</a></td>" +
+        "<td><a href='javascript:alert(\"Are you sure?\");'" +
+        ">Delete</a></td></tr>" +
+        "<tr><td>4</td><td>Mouse</td><td>13.99</td>" +
+        "<td><a href='javascript:alert(4);'" +
+        ">Edit</a></td>" +
+        "<td><a href='javascript:alert(\"Are you sure?\");'" +
+        ">Delete</a></td></tr>" +
+        "<tr><td>5</td><td>Keyboard</td><td>14.50</td>" +
+        "<td><a href='javascript:alert(5);'" +
+        ">Edit</a></td>" +
+        "<td><a href='javascript:alert(\"Are you sure?\");'" +
+        ">Delete</a></td></tr>" +
+        "</tbody>" +
+        "</table>"
+    </script>
+</body>
+</html>
