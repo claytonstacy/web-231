@@ -7,12 +7,60 @@
 ; Description: Putting it all together
 ;===========================================
 -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Putting it all together</title>
 
-
+<title>
+Putting It All Together
+</title>
+<meta name="author" content="Clayton Stacy">
+<meta name="revised" content="Clayton Stacy, 2/2/2020">
+<meta name="description" content="Web 231 Assignment 8.4">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="../site.css">
 </head>
+<body>
+<div id="emps"></div>
+
+<script type="text/javascript">
+    //Create an employee constructor object with id, firstName, lastName, and title
+    function employee(id, firstName, lastName, title) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.title = title;
+    };
+  
+    //Create an array of 5 employees using the employee constructor
+    var employees = [
+        new employee(1, 'Joe', 'Smith', 'Manager'),
+        new employee(2, 'Jane', 'Doe', 'Supervisor'),
+        new employee(3, 'Dwight', 'Shrute', 'Assistant to the Assistant Regional Manager'),
+        new employee(4, 'King', 'Kong', 'Bouncer'),
+        new employee(5, 'John', 'Kennedy', 'President')
+    ];
+    //writing a function that takes in an id, finds that id in the employees array, and alerts the ID, Name, and Title of the Employee
+    function getEmployee(id) {
+        var employee = employees.find(e => e.id = id)
+        if(employee != null && employee != undefined){
+            alert(`ID: ${employee.id}
+Name: ${employee.firstName} ${employee.lastName}
+Title: ${employee.title}`)
+        }
+    }
+    //Build the output for the employees table by iterating over the employees array, use innerHTML function to output to the emps div
+    var output = "<table id='employees'><thead><tr><th>Id</th><th>First Name</th><th>Last Name</th><th>Title</th></tr></thead><tbody>";
+    employees.forEach(e => {
+        output += `<tr><td>${e.id}</td><td>${e.firstName}</td><td>${e.lastName}</td><td>${e.title}</td></tr>`
+    })
+    output = output + "</tbody></table>"
+    document.getElementById('emps').innerHTML = output;
+    //Create a click event that will use the getEmployees function to output the employee clicked on
+    $("table tr").click(function () {
+    const foundId = $(this).find("td:first").html();
+    getEmployee(foundId);
+})
+</script>
+</body>
+</html>
