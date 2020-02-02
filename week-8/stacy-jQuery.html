@@ -12,7 +12,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>jQuery</title>
-
-
+    <title>Stacy jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
 </head>
+<body>
+    <div class="nav">
+        <a href="#loremTitle">Paragraph</a>
+        <a href="#fruitTable">Fruit Table</a>
+      </div>
+    <div id="loremTitle">
+        <h2>Lorem Paragraph</h2>
+        <p id="lorem">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptate atque inventore corrupti quam omnis beatae tempora accusantium ullam, praesentium quasi odio vitae deleniti hic asperiores nemo rem, alias dolorem!
+        </p>
+    <input type="button" value="Toggle" id="toggle">
+    </div>
+    <div id="fruitTable">
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Type</th>
+            </tr>
+            <tr class="odd">
+                <td class="fruitId">1</td>
+                <td>Apple</td>
+            </tr>
+            <tr class="even">
+                <td class="fruitId">2</td>
+                <td>Orange</td>
+            </tr>
+            <tr class="odd">
+                <td class="fruitId">3</td>
+                <td>Pear</td>
+            </tr>
+            <tr class="even">
+                <td class="fruitId">4</td>
+                <td>Lime</td>
+            </tr>
+            <tr class="odd">
+                <td class="fruitId">5</td>
+                <td>Lemon</td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script>
+$("#toggle").click(function() {
+    $("#lorem").toggle();
+})
+$(".fruitId").click(function() {
+    var fruitId = $(this).text();
+    var fruitType = $(this).closest("td").next().text();
+    alert(`ID: ${fruitId}
+Type: ${fruitType}`)
+})
+
+</script>
+<style>
+body {
+    font-family: Roboto, sans-serif;
+}
+h2 {
+    font-weight: 500;
+}
+th {
+    font-weight: 400;
+}
+td {
+    font-weight: 300;
+}
+.nav {
+  overflow: hidden;
+  background-color: skyblue;
+}
+
+.nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.even {
+    background-color: grey;
+}
+#loremTitle{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#fruitTable{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+</style>
